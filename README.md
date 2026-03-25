@@ -1,4 +1,4 @@
-# Programowanie-gier-komputerowych-
+# Programowanie-gier-komputerowych- LAB1
 W tej części trzeba było na początku utworzyć konto na microstudio.dev, następnie utworzyć nowy projekt gdzie umiesciło się ortodoksyjny podział na trzy funkcjie systemowe:
 init()
 update()
