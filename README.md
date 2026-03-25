@@ -5,3 +5,5 @@ update()
 draw()
 Następnie w funkcji update() umieszczaliśmy logikę sterowania statkiem za pomocą przyciksów na klawiaturze, do tego jeszcze trzeba było stworzyć Sprite(duszka) którym będziemy poruszać.
 Na konieć dodałem to że statek nie może wychodzić poza okno gry.
+# Link do projektu: 
+https://microstudio.dev/i/tomjan255/tgk01_tomaszjaniuk/
