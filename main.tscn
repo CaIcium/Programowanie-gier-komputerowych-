@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://cfqc7tl2uo7qp"]
+
+[ext_resource type="Script" uid="uid://d3mby7lhunkl5" path="res://lab9/path_follow_3d.gd" id="1_y38ec"]
+[ext_resource type="Script" uid="uid://bw5q1ahtc6ik6" path="res://lab9/ruch.gd" id="2_sj5u7"]
+
+[sub_resource type="Curve3D" id="Curve3D_lhx7b"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, -10, 0, 0, 0, 0, 0, 10, 0, 0, -20, 0, 0, -10, 0, 0, 10, 0, 0, -30, 0, 0, -20, 0, 0, 10, 0, 0, -40, 0, 0, -30, 0, 0, -50, 0, 0, 0, 0, 0, -40),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0)
+}
+point_count = 5
+
+[sub_resource type="BoxMesh" id="BoxMesh_7dm0k"]
+
+[node name="main" type="Node3D" unique_id=1895283519]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=62184433]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.209341, 4.773804, -26.88821)
+
+[node name="Path3D" type="Path3D" parent="." unique_id=1889378523]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4638896, 0)
+curve = SubResource("Curve3D_lhx7b")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="Path3D" unique_id=202794368]
+transform = Transform3D(0.9999993, 0, 0, 0, 0.9999993, 0, 0, 0, 1, 0, 0, -2.662967)
+progress = 2.6623368
+script = ExtResource("1_y38ec")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Path3D/PathFollow3D" unique_id=1715397182]
+transform = Transform3D(1.0000007, 0, 0, 0, 1.0000007, 0, 0, 0, 1, 0, -1.1584448, 2.9941354)
+mesh = SubResource("BoxMesh_7dm0k")
+script = ExtResource("2_sj5u7")
+
+[node name="Camera3D" type="Camera3D" parent="Path3D/PathFollow3D" unique_id=1534907883]
+transform = Transform3D(0.9996635, 0.013310798, 0.02230123, -0.018514352, 0.96742165, 0.2524957, -0.018213745, -0.25282326, 0.96734107, 0.040772945, -0.03730488, 4.800629)
