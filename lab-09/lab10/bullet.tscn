@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://djub4f28m2sjx"]
+
+[ext_resource type="Script" uid="uid://bnrde52dp8v5b" path="res://lab10/bullet.gd" id="1_4h22v"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_8vklh"]
+top_radius = 0.01
+bottom_radius = 0.3
+height = 0.35
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_gubr3"]
+radius = 0.2
+
+[node name="Area3D" type="Area3D" unique_id=1938191993]
+script = ExtResource("1_4h22v")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=109640784]
+transform = Transform3D(0.19978972, 0, 0, 0, -0.0036570565, 0.21142322, 0, -0.60909784, -0.0012693966, 0, 0, -1.7350972)
+mesh = SubResource("CylinderMesh_8vklh")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=816900478]
+transform = Transform3D(1, 0, 0, 0, 1.1869903, 0, 0, 0, 1, 0, 0, -1.7232022)
+shape = SubResource("SphereShape3D_gubr3")
