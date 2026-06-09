@@ -1,7 +1,7 @@
 
 # PROJEKT GRY - HUNT 
 ## Opis gry 
-Gra jest strzelanką w 3D, ruszamy się strałkami i myszką strzelamy. Musimy pokonać potowry napierające na gracza. Gracz i potowry znajdują się na kamiennej mapce, potwory pokazają sie losowo dookoła przeciwnika. Gracz musi pamiętać ze potowry mają 2 punkty zycia więc musi oddać 2 celne strzały zeby zabić, zato gracz ma jedno życie. Gracz musi przeładowywać broń eby miec pociski na wrogów.
+Gra jest strzelanką w 3D, ruszamy się strałkami i myszką strzelamy. Musimy pokonać potowry napierające na gracza. Gracz i potowry znajdują się na kamiennej mapce, potwory pokazają sie losowo dookoła przeciwnika. Gracz musi pamiętać ze potowry mają 2 punkty zycia więc musi oddać 2 celne strzały zeby zabić, zato gracz ma jedno życie. Gracz musi przeładowywać broń zeby miec pociski na wrogów.
 ## Wybrany silnik i instrukcja uruchomienia projeku
 Silnik jaki wybrałem jest to godot, aby urtuchomić trzeba pobrać z katalogu lab_15 folder nowy-projekt=gry i otworzyć ten projekt w godocie. 
 ## Opis własnego mechanizmu 
