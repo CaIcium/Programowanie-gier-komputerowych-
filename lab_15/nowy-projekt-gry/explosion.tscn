@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dabrsibngnfcd"]
+
+[ext_resource type="Script" uid="uid://bv0swhn6s2in1" path="res://explosion.gd" id="1_q7epf"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_vxas0"]
+inherit_velocity_ratio = 3.0
+spread = 180.0
+
+[sub_resource type="SphereMesh" id="SphereMesh_j4sxf"]
+radius = 0.1
+height = 0.2
+
+[node name="Explosion" type="GPUParticles3D" unique_id=1998258479]
+emitting = false
+one_shot = true
+process_material = SubResource("ParticleProcessMaterial_vxas0")
+draw_pass_1 = SubResource("SphereMesh_j4sxf")
+script = ExtResource("1_q7epf")

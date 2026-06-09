@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://pr4rgoh7vv3b"]
+
+[ext_resource type="Script" uid="uid://d26i35s6g2k2c" path="res://potwór.gd" id="1_mrqeg"]
+[ext_resource type="PackedScene" uid="uid://cyby1ep1nfaks" path="res://monster.glb" id="1_s3gyj"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_s3gyj"]
+margin = 0.0
+radius = 0.907
+height = 1.814
+
+[node name="Monster" type="CharacterBody3D" unique_id=60427347 groups=["enemy", "monster"]]
+script = ExtResource("1_mrqeg")
+
+[node name="monster" parent="." unique_id=658716718 instance=ExtResource("1_s3gyj")]
+
+[node name="Skeleton3D" parent="monster/Armature" parent_id_path=PackedInt32Array(658716718, 464881731) index="0" unique_id=139359526]
+bones/0/position = Vector3(-0.25645798, 0.6040228, -0.38777167)
+bones/6/rotation = Quaternion(-0.36002862, -0.06660413, -0.48553374, 0.79385155)
+bones/8/position = Vector3(-0.36288, 0.554684, -0.27898666)
+bones/8/rotation = Quaternion(0.031346586, 0.20459993, 0.9771864, -0.047572028)
+bones/10/rotation = Quaternion(0.4903206, -0.34636295, 0.7314526, 0.3234124)
+bones/11/rotation = Quaternion(-0.112957604, 0.011942544, 0.9926282, -0.042275812)
+bones/13/position = Vector3(-0.15308988, 0.5446084, -0.4401207)
+bones/14/rotation = Quaternion(-0.11637948, 0.02334529, 0.3177128, 0.9407281)
+bones/15/rotation = Quaternion(0.13646664, -0.010508393, 0.8730485, -0.46803084)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1416315359 groups=["enemy"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.49021924, 0.44729096, -0.40390444)
+shape = SubResource("CapsuleShape3D_s3gyj")
+
+[editable path="monster"]

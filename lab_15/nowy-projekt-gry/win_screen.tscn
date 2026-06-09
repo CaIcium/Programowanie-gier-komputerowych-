@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://cu02ldeyxvkqf"]
+
+[ext_resource type="Script" uid="uid://qx63vyumnog1" path="res://end_screen.gd" id="1_l2arl"]
+
+[node name="win_screen" type="Control" unique_id=1960317137]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_l2arl")
+
+[node name="Label" type="Label" parent="." unique_id=1304672033]
+layout_mode = 0
+offset_left = 455.0
+offset_top = 138.0
+offset_right = 642.0
+offset_bottom = 193.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.88, 0.18333337, 0.04400001, 1)
+theme_override_font_sizes/font_size = 40
+text = "Wygrałeś!"
+
+[node name="Button" type="Button" parent="." unique_id=695277071]
+layout_mode = 0
+offset_left = 438.0
+offset_top = 235.0
+offset_right = 671.0
+offset_bottom = 282.0
+theme_override_font_sizes/font_size = 28
+text = "Powrót do menu"
+
+[connection signal="pressed" from="Button" to="." method="_on_menu_pressed"]

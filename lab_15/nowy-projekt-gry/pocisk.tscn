@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://cipibjmuv28hl"]
+
+[ext_resource type="Script" uid="uid://7n7xfofe232m" path="res://pocisk.gd" id="1_tk6rg"]
+[ext_resource type="PackedScene" uid="uid://dabrsibngnfcd" path="res://explosion.tscn" id="2_20ymk"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_20ymk"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_8hrev"]
+height = 3.9921875
+
+[node name="Pocisk" type="Area3D" unique_id=185795606]
+transform = Transform3D(1.7879696, 0, 0, 0, 1.4157244, 0, 0, 0, 1, 0, 0, 0)
+script = ExtResource("1_tk6rg")
+explosion_scene = ExtResource("2_20ymk")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1573204807]
+transform = Transform3D(0.40920833, 0, 0, 0, 0.011381422, -0.43174887, 0, 1.8420961, 0.0026675686, 0, 0, 0)
+mesh = SubResource("CapsuleMesh_20ymk")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=567941899]
+transform = Transform3D(1, 0, 0, 0, -0.0020419783, 0.9999979, 0, -0.9999979, -0.0020419783, 0, 0.0001475648, 0.072265446)
+shape = SubResource("CapsuleShape3D_8hrev")
+
+[node name="Timer" type="Timer" parent="." unique_id=1647696117]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

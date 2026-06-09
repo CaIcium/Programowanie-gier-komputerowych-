@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://dnilya4ea44tu"]
+
+[ext_resource type="Script" uid="uid://d25ksek7ftr53" path="res://main_menu.gd" id="1_06t4h"]
+[ext_resource type="Texture2D" uid="uid://bggtg3o7i2djp" path="res://potimage.png" id="2_7vrkn"]
+
+[sub_resource type="FontVariation" id="FontVariation_fu7sn"]
+
+[sub_resource type="FontVariation" id="FontVariation_jix8l"]
+base_font = SubResource("FontVariation_fu7sn")
+
+[node name="MainMenu" type="Control" unique_id=255659615]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 102.0
+offset_top = 178.0
+offset_right = 102.0
+offset_bottom = 178.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_06t4h")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1799979160]
+layout_mode = 0
+offset_left = -101.0
+offset_top = -176.0
+offset_right = 1050.0
+offset_bottom = 468.0
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=14795539]
+layout_mode = 0
+offset_left = -104.0
+offset_top = -177.0
+offset_right = 1049.0
+offset_bottom = 469.0
+texture = ExtResource("2_7vrkn")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=736709648]
+layout_mode = 0
+offset_left = 505.0
+offset_top = -137.0
+offset_right = 1012.0
+offset_bottom = 441.0
+color = Color(0.18462008, 0.12759683, 0.12556973, 1)
+
+[node name="Label" type="Label" parent="ColorRect" unique_id=1532308121]
+layout_mode = 0
+offset_left = 187.0
+offset_top = 93.0
+offset_right = 296.0
+offset_bottom = 171.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.79, 0.14220001, 0.19618343, 0.7058824)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("FontVariation_jix8l")
+theme_override_font_sizes/font_size = 39
+text = "Hunt"
+horizontal_alignment = 1
+
+[node name="Graj" type="Button" parent="ColorRect" unique_id=130954634]
+layout_mode = 0
+offset_left = 61.0
+offset_top = 198.0
+offset_right = 420.0
+offset_bottom = 306.0
+text = "Graj"
+
+[node name="Wyjscie" type="Button" parent="ColorRect" unique_id=834928260]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 336.0
+offset_right = 421.0
+offset_bottom = 444.0
+text = "Wyjście"
+
+[connection signal="pressed" from="ColorRect/Graj" to="." method="_on_graj_pressed"]
+[connection signal="pressed" from="ColorRect/Wyjscie" to="." method="_on_wyjscie_pressed"]

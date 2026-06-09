@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://dxv25nxriqqns"]
+
+[ext_resource type="Script" uid="uid://qx63vyumnog1" path="res://end_screen.gd" id="1_my301"]
+
+[node name="EndScreen" type="Control" unique_id=516876729]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_my301")
+
+[node name="MenuGłówne" type="Button" parent="." unique_id=1750926789]
+layout_mode = 0
+offset_left = 478.0
+offset_top = 304.0
+offset_right = 711.0
+offset_bottom = 357.0
+theme_override_font_sizes/font_size = 32
+text = "Wróć do menu"
+
+[node name="Label" type="Label" parent="." unique_id=1156911117]
+layout_mode = 0
+offset_left = 440.0
+offset_top = 184.0
+offset_right = 736.0
+offset_bottom = 261.0
+theme_override_colors/font_color = Color(1, 0.06999999, 0.06999999, 1)
+theme_override_colors/font_shadow_color = Color(1, 0.3, 0, 1)
+theme_override_font_sizes/font_size = 56
+text = "Przegrałeś!"
+
+[connection signal="pressed" from="MenuGłówne" to="." method="_on_menu_pressed"]
