@@ -10,9 +10,9 @@ Tworząc tą gre troche wzorowałem sie na grze Quake. Zamysł miał być mniej 
 Projkt jest wzorowany na Quake https://www.youtube.com/watch?v=WJ_xy0agNm4. Moim zdaniem nie jest klonem tej gry, ale bardziej inspiracją.
 ## Znane bugi i ograniczenia
 Bugi jakie zaobserwowałem tworząc gre to np. wypadanie przeciwników poza mapę. Rozwiązałem to w taki sposób, że po prostu kiedy przeciwnik wypadnie poza mape to respi sie nowy, a tamten znika. 
-Dodatkowo jednym z ograniczeń jest to, że lepiej jest odpalić tą gra na komputerze z kratą graficzną. Wrazie jakby był problem z odpaleniem po prostu dołącze jeszcze plik MP4 przedstawiajacy rozgrywkę.
+Dodatkowo jednym z ograniczeń jest to, że lepiej jest odpalić tą gra na komputerze z kratą graficzną. W razie jakby był problem z odpaleniem po prostu dołącze filmik co wrzuciłem na youtube, bo plik mp4 bedzie za duży dla githuba.
 ## Dodatkowe informacje
-Wszystkie modele, animacje jakie znajdują się grze wykoanłem sam w blenderze, nie wyglądają one najlepiej ale miało to poprostu służyć jako podstawę to projektu. Filmi bedzie znajdował się w tym samym miejscu w katologu co plik README.md
+Wszystkie modele, animacje jakie znajdują się grze wykoanłem sam w blenderze, nie wyglądają one najlepiej ale miało to poprostu służyć jako podstawę to projektu. Link do filmiku: https://www.youtube.com/watch?v=2qHUSc_Mx24
 ## Sterowanie:
 W -  ruch do przodu
 S - ruch do tylu
